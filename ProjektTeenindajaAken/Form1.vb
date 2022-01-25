@@ -17,4 +17,19 @@
         Return km / KM2MI
     End Function
 
+    Private Sub timerKell_Tick(sender As Object, e As EventArgs) Handles timerKell.Tick
+        lblKell.Text = DateTime.Now()
+    End Sub
+
+    Private Sub KasutajaAken_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        timerKell.Interval = 2000
+        timerKell.Enabled = True
+
+    End Sub
+
+
+    Private Sub SulgeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SulgeToolStripMenuItem.Click
+        Me.Close()
+
+    End Sub
 End Class
