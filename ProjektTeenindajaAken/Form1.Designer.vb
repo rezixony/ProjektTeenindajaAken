@@ -40,6 +40,7 @@ Partial Class Form1
         '
         Me.txtMiilid.Location = New System.Drawing.Point(416, 208)
         Me.txtMiilid.Name = "txtMiilid"
+        Me.txtMiilid.ReadOnly = True
         Me.txtMiilid.Size = New System.Drawing.Size(206, 26)
         Me.txtMiilid.TabIndex = 1
         '
@@ -81,7 +82,7 @@ Partial Class Form1
         Me.Controls.Add(Me.txtMiilid)
         Me.Controls.Add(Me.txtKilomeetrid)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Distsantsi teisendamine"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
