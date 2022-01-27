@@ -2,13 +2,17 @@
 
     Private Const KM2MI = 1.609344
     Private Sub btnTeisenda_Click(sender As Object, e As EventArgs) Handles btnTeisenda.Click
+        Dim teisendaja As PrjTeisendajaKonteiner.ITeisendaja
+        teisendaja = New PrjTeisendajaKonteiner.ClassTeisendaja
+
         Try
             'proovime teisendada
             txtMiilid.Text = teisenda(txtKilomeetrid.Text)
 
         Catch ex As Exception
             'vea korral toome ette hoiatuskasti
-            MsgBox("Viga sisendis!")
+            'MsgBox("Viga sisendis!")
+            txtMiilid.Text = teisendaja.teisendaKilomeetridMiilideks(txtKilomeetrid.Text)
 
         End Try
     End Sub
